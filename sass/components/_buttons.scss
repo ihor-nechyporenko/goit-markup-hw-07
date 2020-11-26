@@ -1,0 +1,39 @@
+// Portfolio gallery's buttons
+
+.filter {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.filter li:not(:last-child) {
+    margin-right: 8px;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 0px;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    background-color: var(--primary-button-color);
+    color: var(--title-text-color);
+    cursor: pointer;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} 
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}

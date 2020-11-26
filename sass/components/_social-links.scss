@@ -1,0 +1,44 @@
+.social {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    fill: #AFB1B8;
+    background-color: var(--primary-bg-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons {
+    width: 20px;
+    height: 20px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social > li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-links:hover .social-icons,
+.social-links:focus .social-icons {
+    fill: var(--primary-bg-color);
+}
+
+.social-links:hover,
+.social-links:focus {
+    background-color: var(--accent-color);
+}

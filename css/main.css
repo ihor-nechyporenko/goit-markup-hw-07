@@ -88,9 +88,7 @@ body {
   background-color: #F5F4FA;
   color: #212121;
   cursor: pointer;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover, .btn:focus {
@@ -178,9 +176,7 @@ body {
   background-color: #2196F3;
   color: #FFFFFF;
   cursor: pointer;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover, .hero-btn:focus {
@@ -357,9 +353,7 @@ body {
   border-radius: 50%;
   fill: #AFB1B8;
   background-color: #FFFFFF;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links:hover .social-icons,
@@ -374,9 +368,7 @@ body {
 .social-icons {
   width: 20px;
   height: 20px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav {
@@ -410,9 +402,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #212121;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:focus, .nav-link:hover {
@@ -460,9 +450,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-header:hover, .contacts-header:focus {
@@ -476,9 +464,7 @@ body {
 
 .icon-contacts {
   margin-right: 10px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -516,9 +502,7 @@ body {
 
 .clients-icon {
   fill: #AFB1B8;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link {
@@ -530,9 +514,7 @@ body {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-icon,
@@ -601,9 +583,7 @@ body {
   border-radius: 50%;
   fill: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-social-links:hover, .our-social-links:focus {
@@ -674,9 +654,7 @@ body {
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-btn:hover, .subscribe-btn:focus {
@@ -692,9 +670,7 @@ body {
   margin-left: 10px;
   vertical-align: middle;
   fill: #FFFFFF;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-footer {
@@ -903,9 +879,7 @@ textarea:focus {
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit:hover {
@@ -1016,9 +990,7 @@ textarea:focus {
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link {

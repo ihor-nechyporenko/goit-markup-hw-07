@@ -5,7 +5,7 @@
         "../sass/main.scss",
         "../sass/utils/_variables.scss",
         "../sass/utils/_visually-hidden.scss",
-        "../sass/components/_common.scss",
+        "../sass/base/_common.scss",
         "../sass/components/_buttons.scss",
         "../sass/components/_logo.scss",
         "../sass/components/_hero.scss",

@@ -36,7 +36,7 @@
     margin: 0;
     transform: translate(0, -50%);
     
-    font-family: Roboto, sans-serif;
+    font-family: $roboto-font, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
@@ -82,7 +82,7 @@
     padding-left: 24px;
     padding-right: 24px;
 
-    font-family: Roboto, sans-serif;
+    font-family: $roboto-font, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -96,7 +96,7 @@
     padding-left: 24px;
     padding-right: 24px;
 
-    font-family: Roboto, sans-serif;
+    font-family: $roboto-font, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;

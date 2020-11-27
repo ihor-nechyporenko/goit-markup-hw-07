@@ -37,7 +37,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: var(--primary-bg-color);
+    color: $primary-bg-color;
 }
 
 .hero-btn {
@@ -55,17 +55,17 @@
     text-align: center;
     letter-spacing: 0.06em;
 
-    background-color: var(--accent-color);
-    color: #FFFFFF;
+    background-color: $accent-color;
+    color: $primary-bg-color;
     cursor: pointer;
 
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.hero-btn:hover,
-.hero-btn:focus {
-    background-color: var(--primary-bg-color);
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        background-color: $primary-bg-color;
+        color: $accent-color;
+    }
 }

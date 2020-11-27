@@ -4,7 +4,8 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+
+    color: $accent-color;
     text-decoration: none;
 }
 
@@ -14,7 +15,8 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--title-text-color);
+
+    color: $title-text-color;
     text-decoration: none;
 }
 
@@ -24,6 +26,7 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    
     text-decoration: none;
-    color: var(--primary-bg-color);
+    color: $primary-bg-color;
 }

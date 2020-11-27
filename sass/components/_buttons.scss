@@ -5,10 +5,10 @@
     justify-content: center;
     padding-top: 94px;
     padding-bottom: 50px;
-}
 
-.filter li:not(:last-child) {
-    margin-right: 8px;
+    & li:not(:last-child) {
+        margin-right: 8px;
+    }
 }
 
 .btn {
@@ -23,17 +23,17 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    background-color: var(--primary-button-color);
-    color: var(--title-text-color);
+    background-color: $primary-button-color;
+    color: $title-text-color;
     cursor: pointer;
 
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} 
 
-.btn:hover,
-.btn:focus {
-    background-color: var(--accent-color);
-    color: #FFFFFF;
-}
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $primary-bg-color;
+    }
+} 

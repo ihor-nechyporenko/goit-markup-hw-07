@@ -11,10 +11,10 @@
 .site-nav {
     display: flex;
     margin-left: 93px;
-}
 
-.site-nav li:not(:last-child) {
-    margin-right: 50px;
+    & li:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
 .nav-link {
@@ -29,22 +29,22 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: var(--title-text-color);
+    color: $title-text-color;
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.nav-link:focus,
-.nav-link:hover {
-    color: var(--accent-color);
+    &:focus,
+    &:hover {
+        color: $accent-color;
+    }
 }
 
 /* Current page */
 
 .nav-link.current {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .nav-link::after,
@@ -58,67 +58,14 @@
     content: '';
     display: block;
     border-radius: 2px;
-    background-color: var(--accent-color);
-
-    /* transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+    background-color: $accent-color;
 
     opacity: 0;
 }
 
-/* .nav-link:focus::after,
-.nav-link:hover::after, */
 .current::after {
     opacity: 1;
 } 
-
-
-.contacts {
-    display: flex;
-    margin-left: auto;
-}
-
-.contacts li:not(:last-child) {
-    margin-right: 50px;
-}
-
-.contacts-header {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    align-items: center;
-
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--primary-text-color);
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-contacts {
-    margin-right: 10px;
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-header:hover,
-.contacts-header:focus {
-    color: var(--accent-color);
-} 
-
-.contacts-header:hover .icon-contacts,
-.contacts-header:focus .icon-contacts {
-    fill: var(--accent-color);
-}
 
 .line {
     display: flex;

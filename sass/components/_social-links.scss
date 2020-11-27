@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
+
+    & > li:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
 .social-links {
@@ -13,11 +17,21 @@
 
     border-radius: 50%;
     fill: #AFB1B8;
-    background-color: var(--primary-bg-color);
+    background-color: $primary-bg-color;
 
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .social-icons,
+    &:focus .social-icons {
+        fill: $primary-bg-color;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
 }
 
 .social-icons {
@@ -27,18 +41,4 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social > li:not(:last-child) {
-    margin-right: 10px;
-}
-
-.social-links:hover .social-icons,
-.social-links:focus .social-icons {
-    fill: var(--primary-bg-color);
-}
-
-.social-links:hover,
-.social-links:focus {
-    background-color: var(--accent-color);
 }

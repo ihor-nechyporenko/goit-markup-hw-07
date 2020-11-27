@@ -13,11 +13,23 @@
     letter-spacing: 0.03em;
     text-align: center;
 
-    color: var(--title-text-color);
+    color: $title-text-color;
 }
 
 .clients-flexbox {
     display: flex;
+
+    & > li:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.clients-icon {
+    fill: #AFB1B8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link {
@@ -33,26 +45,14 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-icon {
-    fill: #AFB1B8;
+    &:hover .clients-icon,
+    &:focus .clients-icon {
+        fill: $accent-color;
+    }
 
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-    fill: var(--accent-color);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-    border-color: var(--accent-color);
-}
-
-.clients-flexbox > li:not(:last-child) {
-    margin-right: 30px;
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+    }
 }
